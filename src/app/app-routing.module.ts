@@ -8,6 +8,8 @@ import {LoginPageModule } from "./login/login.module"
 import { PrivacyPolicyComponent } from "./privacy-policy/privacy-policy.component"
 import { SignupComponent } from './signup/signup.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import {TermsOfServiceComponent} from './terms-of-service/terms-of-service.component';
+
 
 
 
@@ -31,9 +33,14 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
   },
   {
+    path:  'terms',
+    component: TermsOfServiceComponent
+  },
+  {
     path: 'contact-card',
     component: ContactCardComponent
-  }, {
+  },
+   {
     path: 'settings',
     component: SettingsComponent
   },

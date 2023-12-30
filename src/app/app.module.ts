@@ -24,13 +24,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {AppSharedComponentsModule} from './shared/common.module'
 
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import {TermsOfServiceComponent} from './terms-of-service/terms-of-service.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18s/', '.json');
 }
 
 @NgModule({
-  declarations: [AppComponent, FormsComponent, NotesComponent, ContactCardComponent, SettingsComponent, PrivacyPolicyComponent, ForgotPasswordComponent],
+  declarations: [AppComponent, FormsComponent, NotesComponent, ContactCardComponent, SettingsComponent, PrivacyPolicyComponent, ForgotPasswordComponent, TermsOfServiceComponent],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
